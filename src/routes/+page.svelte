@@ -76,33 +76,33 @@
 </script>
 
 <svelte:head>
-    <title>Demigohu Play Dapp</title>
+    <title>Katana Dapp TASK 5</title>
 </svelte:head>
 
 <div class="container mx-auto min-h-screen px-20 pb-20 pt-20">
     <div class="flex justify-center">
-        <div on:click={() => goto("https://twitter.com/tgraji_k")} class="avatar relative cursor-pointer mb-4">
+        <div on:click={() => goto("https://twitter.com/frhnanz01")} class="avatar relative cursor-pointer mb-4">
             <div class="w-8 h-8 rounded-full absolute z-20 bottom-0 right-0">
                 <img src="https://i.imgur.com/NggjB16.png" />
             </div>
             <div class="w-24 mask mask-square bordered">
-              <img src="https://i.imgur.com/Iv5pwJm.jpeg" />
+              <img src="https://img.freepik.com/premium-vector/illustration-katana-logo-vector-design_593008-258.jpg" />
             </div>
           </div>
     </div>
     <div class="mb-10 text-center">
-        <div class="text-4xl  animate__animated animate__fadeIn animate__delay-1s text-red-400 font-bold ">
-        Inery Task 5 by Demigohu
+        <div class="text-4xl  animate__animated animate__fadeIn animate__delay-1s text-green-400 font-bold ">
+        Inery Task 5 by Katana
         </div>
-        <div class="mt-4  animate__animated animate__fadeIn animate__delay-1s text-white ">To interact with this Dapp Just Click the button below to run a simple transaction with Inery Blockchain <br> After the transaction complete you will see the logs</div>
+        <div class="mt-4  animate__animated animate__fadeIn animate__delay-1s text-white ">Using the DAPP that I made, you only need to click a button and fill out the form. <br> whatever you fill will be safe, just relax.</div>
     </div>
 
     <div class="flex">
         <div class="flex flex-col flex-direction: row; justify-left items-left animate__animated animate__fadeIn animate__delay-2s" style="gap: 50px; margin-left: 10px;">
-            <label for="modal-create" class="btn bg-white text-red-500 btn-error" style="width: 150px; margin-right: 10px;">Create</label>
-            <label for="modal-read" class="btn bg-white text-red-500 btn-error" style="width: 150px; margin-right: 10px;">View</label>
-            <label for="modal-update" class="btn bg-white text-red-500 btn-error" style="width: 150px; margin-right: 10px;">Update</label>
-            <label for="modal-destroy" class="btn bg-white text-red-500 btn-error" style="width: 150px; margin-right: 10px;">Delete</label>
+            <label for="modal-create" class="btn bg-black text-green-500 btn-error" style="width: 150px; margin-right: 10px;">Create</label>
+            <label for="modal-read" class="btn bg-black text-green-500 btn-error" style="width: 150px; margin-right: 10px;">View</label>
+            <label for="modal-update" class="btn bg-black text-green-500 btn-error" style="width: 150px; margin-right: 10px;">Update</label>
+            <label for="modal-destroy" class="btn bg-black text-green-500 btn-error" style="width: 150px; margin-right: 10px;">Delete</label>
         </div>
 
             <!-- detailed -->
@@ -118,27 +118,27 @@
 
 <Modal modal_id="modal-create" modal_title="Build New Record on Inery" on:click={() => create()}>
     <div slot="body" class="flex flex-col gap-4">
-        <input bind:value={create_id} type="text" placeholder="Type ID" class="input input-bordered w-full max-w-xs" />
+        <input bind:value={create_id} type="text" placeholder="Fill Here" class="input input-bordered w-full max-w-xs" />
         <input type="text" placeholder="demigohu" class="input input-bordered w-full max-w-xs" disabled />
-        <textarea bind:value={create_data} class="textarea textarea-bordered w-full" placeholder="Type the details"></textarea>
+        <textarea bind:value={create_data} class="textarea textarea-bordered w-full" placeholder="Fill your details"></textarea>
     </div>
 </Modal>
 
 <Modal modal_id="modal-read" modal_title="View Record by ID" on:click={() => read()}>
     <div slot="body" class="flex flex-col gap-4">
-        <input bind:value={read_id} type="text" placeholder="Type ID" class="input input-bordered w-full max-w-xs" />
+        <input bind:value={read_id} type="text" placeholder="Fill Here" class="input input-bordered w-full max-w-xs" />
     </div>
 </Modal>
 
 <Modal modal_id="modal-update" modal_title="Update Record by ID" on:click={() => update()}>
     <div slot="body" class="flex flex-col gap-4">
-        <input bind:value={update_id} type="text" placeholder="Type ID" class="input input-bordered w-full max-w-xs" />
+        <input bind:value={update_id} type="text" placeholder="Fill Here" class="input input-bordered w-full max-w-xs" />
         <textarea bind:value={update_data} class="textarea textarea-bordered w-full" placeholder="Type the data..."></textarea>
     </div>
 </Modal>
 
 <Modal modal_id="modal-destroy" modal_title="Delete Record by ID" on:click={() => destroy()}>
     <div slot="body" class="flex flex-col gap-4">
-        <input bind:value={destroy_id} type="text" placeholder="Type ID" class="input input-bordered w-full max-w-xs" />
+        <input bind:value={destroy_id} type="text" placeholder="Fill Here" class="input input-bordered w-full max-w-xs" />
     </div>
 </Modal>
